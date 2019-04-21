@@ -1,0 +1,340 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "winres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// 中文(简体，中国) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+LANGUAGE LANG_CHINESE, SUBLANG_CHINESE_SIMPLIFIED
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 0,0,0,0
+ PRODUCTVERSION 0,0,0,0
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x40004L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "040904b0"
+        BEGIN
+            VALUE "CompanyName", "LNSSPsd"
+            VALUE "FileDescription", "Minecraft Level.dat Editor"
+            VALUE "FileVersion", "0.0.0.0"
+            VALUE "InternalName", "LevelEditor.exe"
+            VALUE "LegalCopyright", "Copyright (C) 2018"
+            VALUE "OriginalFilename", "LevelEditor.exe"
+            VALUE "ProductName", "Level Editor"
+            VALUE "ProductVersion", "0.0.0.0"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x409, 1200
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_SELFILE DIALOGEX 0, 0, 310, 85
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_CAPTION
+CAPTION "Select file"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,200,57,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,253,57,50,14
+    EDITTEXT        IDC_FN,20,28,273,18,ES_AUTOHSCROLL
+    LTEXT           "Please enter filename of level.dat.",IDC_STATIC,19,16,107,8
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO
+BEGIN
+    IDD_SELFILE, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 303
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 78
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// AFX_DIALOG_LAYOUT
+//
+
+IDD_SELFILE AFX_DIALOG_LAYOUT
+BEGIN
+    0
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE
+BEGIN
+    IDS_UPDATELOG           "- Add gameversion to the mainscreen.\n- Multilanguages."
+    IDS_VERSION             "0.0.1"
+END
+
+#endif    // 中文(简体，中国) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+/////////////////////////////////////////////////////////////////////////////
+// 英语(美国) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#include ""winres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_MAIN DIALOGEX 0, 0, 255, 216
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_MINIMIZEBOX | WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_APPWINDOW
+CAPTION "LevelEditor MinGW Native"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    LTEXT           "File:",IDC_STATIC,14,14,14,8
+    LTEXT           "Not Selected",IDC_FILENAME,33,14,143,8
+    PUSHBUTTON      "Select File",IDC_SFILE,188,15,39,14
+    LISTBOX         IDC_LIST1,22,56,100,109,LBS_HASSTRINGS | LBS_NOINTEGRALHEIGHT | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "Value: ",IDC_STATIC,139,69,23,8
+    EDITTEXT        IDC_VALUE,163,67,49,14,ES_AUTOHSCROLL
+    PUSHBUTTON      "Set",IDC_SET,147,88,50,14
+    PUSHBUTTON      "Set Seed",IDC_STSEED,147,145,50,14
+    LTEXT           "Seed:",IDC_STATIC,127,113,19,8
+    LTEXT           "???",IDC_SEEDT,148,113,80,8
+    EDITTEXT        IDC_SEED,140,124,61,14,ES_AUTOHSCROLL
+    LTEXT           "Set:",IDC_STATIC,125,126,13,8
+    LTEXT           "Tip: level.dat will auto save when you clicked ""Set"" button.",IDC_STATIC,16,176,185,8
+    PUSHBUTTON      "Close",IDC_CLOSEF,189,34,37,12,WS_DISABLED
+    PUSHBUTTON      "About",IDC_BTABOUT,18,186,50,14
+    PUSHBUTTON      "Update Log",IDC_UPDLOG,75,186,50,14
+    LTEXT           "Game Version:",IDC_STATIC,21,41,48,8
+    LTEXT           "0.0.0.0",IDC_GAMEV,70,41,78,8
+END
+
+IDD_ABOUT DIALOGEX 0, 0, 236, 169
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "About LevelEditor"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    ICON            "",IDC_PIC,28,30,20,20
+    LTEXT           "LevelEditor MinGW",IDC_STATIC,68,22,68,8
+    LTEXT           "Author: LNSSPsd",IDC_STATIC,68,35,55,8
+    LTEXT           "Version: Undefined",IDC_VS,68,48,161,8
+    LTEXT           "Released with GNU GPL 3.0",IDC_RLS,20,65,197,10
+    LTEXT           "Ad: MJTG Technology Group QQ:  590352162",IDC_STATIC,21,77,149,8
+    LTEXT           "(LevelEditor Is the native version of LevDater.)",IDC_STATIC,21,89,208,8
+    LTEXT           "Written in 100% C.",IDC_STATIC,21,100,62,8
+    PUSHBUTTON      "OK",IDC_OK,87,141,50,14
+    COMBOBOX        IDC_LANG,70,117,82,30,CBS_DROPDOWNLIST | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "Language:",IDC_STATIC,32,119,34,8
+END
+
+IDD_ABOUTCN DIALOGEX 0, 0, 236, 169
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "About LevelEditor"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    ICON            "",IDC_PIC,28,30,20,20
+    LTEXT           "LevelEditor MinGW",IDC_STATIC,68,23,63,8
+    LTEXT           "作者: LNSSPsd",IDC_STATIC,68,35,48,8
+    LTEXT           "版本: Undefined",IDC_VS,68,48,161,8
+    LTEXT           "以 GNU GPL 3.0发布",IDC_RLS,20,65,197,10
+    LTEXT           "广告: MJTG 研究组 QQ群号:  590352162",IDC_STATIC,21,77,154,8
+    LTEXT           "(LevelEditor是LevDater的原生版.)",IDC_STATIC,21,89,201,8
+    LTEXT           "使用100% C完成.",IDC_STATIC,21,100,84,8
+    PUSHBUTTON      "吼蛙",IDC_OK,87,141,50,14
+    COMBOBOX        IDC_LANG,70,117,82,30,CBS_DROPDOWNLIST | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "语言:",IDC_STATIC,38,119,27,8
+END
+
+IDD_MAINCN DIALOGEX 0, 0, 255, 227
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_MINIMIZEBOX | WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_APPWINDOW
+CAPTION "LevelEditor MinGW Native"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    LTEXT           "文件:",IDC_STATIC,15,14,25,8
+    LTEXT           "Not Selected",IDC_FILENAME,37,14,137,8
+    PUSHBUTTON      "选择文件",IDC_SFILE,188,15,39,14
+    LISTBOX         IDC_LIST1,20,60,100,109,LBS_HASSTRINGS | LBS_NOINTEGRALHEIGHT | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "值: ",IDC_STATIC,144,74,13,8
+    EDITTEXT        IDC_VALUE,161,71,49,14,ES_AUTOHSCROLL
+    PUSHBUTTON      "设定",IDC_SET,145,92,50,14
+    PUSHBUTTON      "设置种子",IDC_STSEED,145,149,50,14
+    LTEXT           "种子:",IDC_STATIC,124,117,24,8
+    LTEXT           "???",IDC_SEEDT,152,117,80,8
+    EDITTEXT        IDC_SEED,149,128,61,14,ES_AUTOHSCROLL
+    LTEXT           "设置:",IDC_STATIC,123,130,22,8
+    LTEXT           "小提示: 在您点击了 设定 按钮之后文件会被自动保存.",IDC_STATIC,14,180,193,8
+    PUSHBUTTON      "关闭文件",IDC_CLOSEF,189,34,37,12,WS_DISABLED
+    PUSHBUTTON      "关于",IDC_BTABOUT,16,190,50,14
+    PUSHBUTTON      "更新日志",IDC_UPDLOG,73,190,50,14
+    LTEXT           "游戏版本:",IDC_STATIC,21,41,39,8
+    LTEXT           "0.0.0.0",IDC_GAMEV,62,41,78,8
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO
+BEGIN
+    IDD_MAIN, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 248
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 209
+    END
+
+    IDD_ABOUT, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 229
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 162
+    END
+
+    IDD_ABOUTCN, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 229
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 162
+    END
+
+    IDD_MAINCN, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 248
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 220
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// AFX_DIALOG_LAYOUT
+//
+
+IDD_MAIN AFX_DIALOG_LAYOUT
+BEGIN
+    0
+END
+
+IDD_ABOUT AFX_DIALOG_LAYOUT
+BEGIN
+    0
+END
+
+IDD_ABOUTCN AFX_DIALOG_LAYOUT
+BEGIN
+    0
+END
+
+IDD_MAINCN AFX_DIALOG_LAYOUT
+BEGIN
+    0
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDI_ICON1               ICON                    "Icon.ico"
+
+#endif    // 英语(美国) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+
