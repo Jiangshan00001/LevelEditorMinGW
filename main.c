@@ -858,3 +858,8 @@ void start() {
 		DispatchMessageA(&msg);
 	}
 }
+
+int main()
+{
+	return 0;
+}

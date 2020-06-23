@@ -1,9 +1,9 @@
-CC=i686-w64-mingw32-gcc
-WINDRES=i686-w64-mingw32-windres
+CC=gcc
+WINDRES=windres
 RM=rm -rf
-CCFLAGS = -nostdlib -nodefaultlibs -std=c99 -Wl,-e_start -s -mwindows -m32 -Os -w -march=i486
+CCFLAGS =    -std=c99 -Wl,-e_start -s -mwindows -m32 -Os -w -march=i486
 LIBS    = -luser32 -lkernel32 -lgdi32 -lwinmm -lcomctl32 -ladvapi32 -lshell32 -lmsvcrt
-
+#-nostdlib   -nodefaultlibs
 all: LevelEditor.exe
 	
 
